@@ -1,0 +1,80 @@
+/* ----------------------------------------
+   GLOBAL
+---------------------------------------- */
+@font-face {
+  font-family: 'ReceiptMono';
+  src: url('assets/fonts/IosevkaNerdFontPropo-Medium.woff') format('woff');
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f8f7f5;
+  font-family: 'ReceiptMono', monospace;
+  font-size: 13px;              /* 작은 텍스트 통일 */
+  color: #333230;
+  line-height: 1.45;
+}
+
+/* 모눈종이 배경 */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, rgba(60,60,60,0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(60,60,60,0.07) 1px, transparent 1px);
+  background-size: 28px 28px;
+  z-index: -1;
+}
+
+/* ----------------------------------------
+   LAYOUT
+---------------------------------------- */
+#wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  gap: 120px;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+#left-panel {
+  width: 230px;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.role, .email {
+  margin-bottom: 4px;
+}
+
+/* RIGHT PANEL */
+#right-panel {
+  flex: 1;
+}
+
+.section-title {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* WORK ITEM */
+.work-item {
+  cursor: pointer;
+  width: fit-content;
+  padding: 8px 0;
+}
+
+.work-item:hover {
+  opacity: 0.65;
+}
