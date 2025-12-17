@@ -7,10 +7,10 @@ body {
   padding: 0;
   background: #f8f7f5;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;  /* Medium에 해당 */
-  font-size: 13px;
+  font-weight: 500;       /* 모든 텍스트 Medium */
+  font-size: 15px;        /* 기존 13px → 15px로 조금 크게 */
   color: #333230;
-  line-height: 1.45;
+  line-height: 1.3;       /* 기존 1.45 → 1.3으로 조금 더 촘촘하게 */
 }
 
 body::before {
@@ -31,14 +31,14 @@ body::before {
   max-width: 1200px;
   margin: 40px auto;
   display: flex;
-  gap: 60px;           /* 왼쪽과 오른쪽 간격 적당히 조정 */
+  gap: 60px;
   padding: 0 20px;
   box-sizing: border-box;
 }
 
 #left-panel {
-  min-width: 260px;    /* 충분히 텍스트가 잘리지 않도록 최소 너비 확보 */
-  flex-shrink: 0;      /* 줄어들지 않게 고정 */
+  min-width: 260px;
+  flex-shrink: 0;
 }
 
 #right-panel {
@@ -46,24 +46,25 @@ body::before {
 }
 
 /* PERSONAL INFO */
-.name {
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 6px;
+.name,
+.role,
+.email,
+.section-title,
+.work-item {
+  font-size: inherit;   /* body의 15px 상속 */
+  font-weight: inherit; /* body의 500 상속 */
+  margin: 0;            /* 개별 요소의 margin 제거 */
 }
 
-.role, .email {
-  margin-bottom: 4px;
-  word-break: break-word; /* 텍스트가 길어도 줄 바꿈 가능 */
+.role,
+.email {
+  margin-bottom: 6px;  /* 이름~역할~이메일 간격 균일하게 */
 }
 
-/* WORKS */
 .section-title {
-  font-weight: bold;
-  margin-bottom: 6px;
+  margin-bottom: 6px;  /* Works 제목과 항목 간격 */
 }
 
-/* WORK ITEM */
 .work-item {
   cursor: pointer;
   width: fit-content;
