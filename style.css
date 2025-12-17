@@ -28,9 +28,9 @@ body::before {
 #wrapper {
   width: auto;                    /* 콘텐츠 폭만 사용 */
   max-width: 1200px;
-  margin: 40px 0 0 40px;          /* 왼쪽 위 고정 간격 */
+  margin: 30px 0 0 30px;          /* 왼쪽 위 고정 간격 */
   display: flex;
-  gap: 60px;                       /* 왼쪽/오른쪽 간격 */
+  gap: 50px;                       /* 왼쪽/오른쪽 간격 */
   padding: 0;
   box-sizing: border-box;
 }
@@ -88,9 +88,9 @@ body::before {
 
 /* 들여쓰기 레벨 */
 .level1 {
-  padding-left: 16px;    /* Information Design */
+  padding-left: 20px;    /* Information Design */
 }
 
 .level2 {
-  padding-left: 32px;    /* Small Multiples, Infographics, Data Visualizations 동일 */
+  padding-left: 40px;    /* Small Multiples, Infographics, Data Visualizations 동일 */
 }
