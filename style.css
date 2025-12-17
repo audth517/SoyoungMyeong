@@ -2,35 +2,34 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: serif;
-  color: black;
 }
 
+/* -------------------------
+   TYPOGRAPHY (GLOBAL)
+------------------------- */
 body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: black;
   padding: 40px;
 }
 
+/* -------------------------
+   LAYOUT
+------------------------- */
 #wrapper {
   display: flex;
   gap: 80px;
 }
 
-/* LEFT */
+/* LEFT PANEL */
 #left-panel {
   width: 260px;
 }
 
-.name {
-  font-size: 18px;
-}
-
-.role,
-.email {
-  font-size: 14px;
-  margin-top: 4px;
-}
-
-/* RIGHT */
+/* RIGHT PANEL */
 #right-panel {
   flex: 1;
 }
@@ -39,6 +38,9 @@ body {
   margin-bottom: 20px;
 }
 
+/* -------------------------
+   WORK LIST
+------------------------- */
 .work-item div {
   margin-bottom: 6px;
 }
@@ -52,7 +54,7 @@ body {
   margin-left: 40px;
 }
 
-/* CLICK */
+/* CLICKABLE ITEMS */
 .clickable {
   cursor: pointer;
   width: fit-content;
