@@ -2,56 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Soyoung Myeong – Small Multiples</title>
+  <title>Soyoung Myeong</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <div id="wrapper">
 
-    <!-- LEFT SIDE -->
+    <!-- LEFT SIDE: PERSONAL INFO -->
     <div id="left-panel">
       <div class="name">Soyoung Myeong</div>
       <div class="role">ID KAIST Undergraduate Student</div>
       <div class="email">audth517@kaist.ac.kr</div>
-
-      <!-- Introduction -->
-      <div class="intro">
-        <div>// Small Multiples Introduction //</div>
-        <div>// Twelve Months, Twelve Memories Introduction //</div>
-      </div>
     </div>
 
-    <!-- RIGHT SIDE -->
+    <!-- RIGHT SIDE: WORKS -->
     <div id="right-panel">
+      <div class="section-title">Works</div>
 
-      <!-- Top Right Meta -->
-      <div id="top-right-meta">
-        <div>Soyoung Myeong</div>
-        <div>2025</div>
-      </div>
-
-      <!-- Content -->
       <div id="works-list">
-        <div class="work-content">
-
-          <!-- Text -->
-          <div class="work-text">
-            <div>Small Multiples</div>
-            <div class="level1" style="margin-left:20px;">
-              Twelve Months, Twelve Memories
-            </div>
+        <div class="work-item">
+          <div>Industrial Design</div>  <!-- 클릭 안됨 -->
+          <div class="level1">Information Design</div>
+          <div class="clickable" onclick="window.location.href='small-multiples.html'">
+            <div class="level2">Small Multiples</div>
           </div>
-
-          <!-- Image -->
-          <div class="work-image">
-            <img src="Soyoung Myeong_Twelve Months Twelve Memories.png" alt="">
+          <div class="clickable" onclick="window.location.href='infographics.html'">
+            <div class="level2">Infographics</div>
           </div>
-
+          <div class="clickable" onclick="window.location.href='data-visualizations.html'">
+            <div class="level2">Data Visualizations</div>
+          </div>
         </div>
       </div>
-
     </div>
+
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
