@@ -3,39 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <title>Soyoung Myeong</title>
-
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <div id="wrapper">
 
-    <!-- LEFT SIDE: PERSONAL INFO -->
+    <!-- LEFT PANEL -->
     <div id="left-panel">
       <div class="name">Soyoung Myeong</div>
       <div class="role">ID KAIST Undergraduate Student</div>
       <div class="email">audth517@kaist.ac.kr</div>
     </div>
 
-    <!-- RIGHT SIDE: WORKS -->
+    <!-- RIGHT PANEL -->
     <div id="right-panel">
       <div class="section-title">Works</div>
 
       <div id="works-list">
         <div class="work-item">
           <div>Industrial Design</div>
-        
+
           <div class="level1">Information Design</div>
-        
-          <div class="level2 clickable">Small Multiples</div>
-          <div class="level2 clickable">Infographics</div>
-          <div class="level2 clickable">Data Visualizations</div>
+
+          <div class="clickable" onclick="location.href='small-multiples.html'">
+            <div class="level2">Small Multiples</div>
+          </div>
+
+          <div class="clickable" onclick="location.href='infographics.html'">
+            <div class="level2">Infographics</div>
+          </div>
+
+          <div class="clickable" onclick="location.href='data-visualizations.html'">
+            <div class="level2">Data Visualizations</div>
+          </div>
         </div>
       </div>
     </div>
 
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
