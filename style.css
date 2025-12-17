@@ -8,18 +8,8 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: #333230;
+  color: black;              /* 모든 텍스트 black */
   line-height: 1.4;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  pointer-events: none;
-  background-image: none;
-  z-index: -1;
 }
 
 /* ----------------------------------------
@@ -42,7 +32,6 @@ body::before {
 /* RIGHT */
 #right-panel {
   flex: 1;
-  position: relative; /* top-right meta 기준 */
 }
 
 /* ----------------------------------------
@@ -54,6 +43,7 @@ body::before {
   font-weight: inherit;
   line-height: inherit;
   margin: 0;
+  color: black;
 }
 
 /* ----------------------------------------
@@ -64,43 +54,39 @@ body::before {
   margin-bottom: 6px;
 }
 
-/* Introduction */
+/* Introduction → 4줄 아래 */
 .intro {
-  margin-top: 5em;      /* 텍스트 5줄 정도 간격 */
-  font-size: 13px;
+  margin-top: 4em;      /* ← 기존 5em → 4줄 */
   line-height: 1.6;
 }
 
 /* ----------------------------------------
-   TOP RIGHT META
+   TOP META (Soyoung Myeong / 2025)
 ---------------------------------------- */
 #top-right-meta {
-  position: absolute;
-  top: 0;
-  right: 0;
-  text-align: right;
-  font-size: 12px;
-  opacity: 0.6;
+  margin-bottom: 40px;   /* 왼쪽 레이아웃과 같은 흐름 */
+  text-align: left;      /* 왼쪽 정렬 */
 }
 
 /* ----------------------------------------
    WORK CONTENT
 ---------------------------------------- */
 #works-list {
-  margin-top: 40px;
-}
-
-.work-content {
   display: flex;
+  flex-direction: column;
   gap: 40px;
 }
 
+/* 텍스트 블록 (중간 레이아웃) */
 .work-text {
-  flex: 1;
+  width: fit-content;
 }
 
+/* ----------------------------------------
+   IMAGE BLOCK (새로운 레이아웃)
+---------------------------------------- */
 .work-image {
-  flex: 1;
+  width: 100%;           /* 텍스트 + meta 포함 너비 */
 }
 
 .work-image img {
@@ -110,13 +96,8 @@ body::before {
 }
 
 /* ----------------------------------------
-   LIST / INDENTATION
+   INDENTATION
 ---------------------------------------- */
-.work-item {
-  width: fit-content;
-  margin-bottom: 6px;
-}
-
 .level1 {
   padding-left: 20px;
 }
@@ -126,7 +107,7 @@ body::before {
 }
 
 /* ----------------------------------------
-   CLICKABLE (index.html 용)
+   CLICKABLE (index.html)
 ---------------------------------------- */
 .clickable {
   cursor: pointer;
