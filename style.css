@@ -12,7 +12,7 @@ body {
   padding: 0;
   background: #f8f7f5;
   font-family: 'ReceiptMono', monospace;
-  font-size: 13px;              /* 작은 텍스트 통일 */
+  font-size: 13px;
   color: #333230;
   line-height: 1.45;
 }
@@ -39,21 +39,21 @@ body::before {
   max-width: 1200px;
   margin: 40px auto;
   display: flex;
-  gap: 100px;          /* 조금 줄여 더 왼쪽 가까이 */
-  padding: 0 20px;     /* 좌우 여백도 더 줄임 */
+  gap: 60px;           /* 왼쪽과 오른쪽 간격 적당히 조정 */
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
 #left-panel {
-  width: 200px;        /* 패널 너비 좀 줄여 전체 좌측 정렬 느낌 강화 */
-  margin-left: 0;      /* 완전히 왼쪽 붙임 */
+  min-width: 220px;    /* 충분히 텍스트가 잘리지 않도록 최소 너비 확보 */
+  flex-shrink: 0;      /* 줄어들지 않게 고정 */
 }
 
 #right-panel {
   flex: 1;
-  margin-left: 0;      /* Works도 왼쪽으로 이동 */
 }
 
+/* PERSONAL INFO */
 .name {
   font-size: 14px;
   font-weight: bold;
@@ -62,8 +62,10 @@ body::before {
 
 .role, .email {
   margin-bottom: 4px;
+  word-break: break-word; /* 텍스트가 길어도 줄 바꿈 가능 */
 }
 
+/* WORKS */
 .section-title {
   font-weight: bold;
   margin-bottom: 12px;
