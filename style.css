@@ -71,7 +71,7 @@ body::before {
 .work-item {
   cursor: pointer;
   width: fit-content;
-  padding: 8px 0;
+  padding: 0;
 }
 
 .work-item:hover {
