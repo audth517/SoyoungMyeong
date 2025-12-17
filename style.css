@@ -1,17 +1,13 @@
 /* ----------------------------------------
    GLOBAL
 ---------------------------------------- */
-@font-face {
-  font-family: 'ReceiptMono';
-  src: url('assets/fonts/IosevkaNerdFontPropo-Medium.woff') format('woff');
-  font-weight: normal;
-}
 
 body {
   margin: 0;
   padding: 0;
   background: #f8f7f5;
-  font-family: 'ReceiptMono', monospace;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;  /* Medium에 해당 */
   font-size: 13px;
   color: #333230;
   line-height: 1.45;
