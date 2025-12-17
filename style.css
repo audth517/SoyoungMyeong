@@ -45,7 +45,7 @@ body::before {
 }
 
 #left-panel {
-  min-width: 220px;    /* 충분히 텍스트가 잘리지 않도록 최소 너비 확보 */
+  min-width: 260px;    /* 충분히 텍스트가 잘리지 않도록 최소 너비 확보 */
   flex-shrink: 0;      /* 줄어들지 않게 고정 */
 }
 
