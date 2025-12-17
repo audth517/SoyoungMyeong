@@ -1,118 +1,57 @@
-/* ----------------------------------------
-   GLOBAL
----------------------------------------- */
+/* GLOBAL */
 body {
   margin: 0;
-  padding: 0;
   background: #f8f7f5;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
   font-size: 16px;
-  color: black;              /* 모든 텍스트 black */
+  font-weight: 500;
+  color: black;
   line-height: 1.4;
 }
 
-/* ----------------------------------------
-   LAYOUT
----------------------------------------- */
+/* WRAPPER: 가로 3열 */
 #wrapper {
-  max-width: 1200px;
-  margin: 27px 0 0 27px;
-  display: flex;
-  gap: 40px;
-  box-sizing: border-box;
+  margin: 27px;
+  display: grid;
+  grid-template-columns: 260px 1fr 160px;
+  column-gap: 40px;
 }
 
 /* LEFT */
-#left-panel {
-  min-width: 260px;
-  flex-shrink: 0;
+#left-column {
+  display: flex;
+  flex-direction: column;
 }
 
-/* RIGHT */
-#right-panel {
-  flex: 1;
-}
-
-/* ----------------------------------------
-   TEXT RESET
----------------------------------------- */
-#left-panel *,
-#right-panel * {
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  margin: 0;
-  color: black;
-}
-
-/* ----------------------------------------
-   LEFT PANEL SPACING
----------------------------------------- */
-.role,
-.email {
-  margin-bottom: 6px;
-}
-
-/* Introduction → 4줄 아래 */
-.intro {
-  margin-top: 4em;      /* ← 기존 5em → 4줄 */
+.left-bottom {
+  margin-top: 4em; /* 왼쪽 하단 */
   line-height: 1.6;
 }
 
-/* ----------------------------------------
-   TOP META (Soyoung Myeong / 2025)
----------------------------------------- */
-#top-right-meta {
-  margin-bottom: 40px;   /* 왼쪽 레이아웃과 같은 흐름 */
-  text-align: left;      /* 왼쪽 정렬 */
-}
-
-/* ----------------------------------------
-   WORK CONTENT
----------------------------------------- */
-#works-list {
+/* CENTER */
+#center-column {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-/* 텍스트 블록 (중간 레이아웃) */
-.work-text {
-  width: fit-content;
+.level1 {
+  padding-left: 20px;
 }
 
-/* ----------------------------------------
-   IMAGE BLOCK (새로운 레이아웃)
----------------------------------------- */
-.work-image {
-  width: 100%;           /* 텍스트 + meta 포함 너비 */
-}
-
-.work-image img {
+.center-bottom img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* ----------------------------------------
-   INDENTATION
----------------------------------------- */
-.level1 {
-  padding-left: 20px;
+/* RIGHT */
+#right-column {
+  text-align: left;
 }
 
-.level2 {
-  padding-left: 40px;
-}
-
-/* ----------------------------------------
-   CLICKABLE (index.html)
----------------------------------------- */
-.clickable {
-  cursor: pointer;
-}
-
-.clickable:hover {
-  opacity: 0.65;
+/* RESET */
+#wrapper * {
+  margin: 0;
+  padding: 0;
 }
