@@ -1,6 +1,9 @@
-/* GLOBAL */
+/* ----------------------------------------
+   GLOBAL
+---------------------------------------- */
 body {
   margin: 0;
+  padding: 0;
   background: #f8f7f5;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -9,55 +12,67 @@ body {
   line-height: 1.4;
 }
 
-/* WRAPPER: 가로 3열 */
+/* ----------------------------------------
+   WRAPPER
+---------------------------------------- */
 #wrapper {
   margin: 27px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* row 간 간격 */
+}
+
+/* ----------------------------------------
+   ROW (3-column grid)
+---------------------------------------- */
+.row {
   display: grid;
   grid-template-columns: 260px 1fr 160px;
   column-gap: 40px;
+  align-items: start;
 }
 
-/* LEFT */
-#left-column {
+/* ----------------------------------------
+   COLUMNS
+---------------------------------------- */
+.col {
   display: flex;
   flex-direction: column;
+  gap: 6px;
 }
 
-.left-bottom {
-  margin-top: 4em; /* 왼쪽 하단 */
-  line-height: 1.6;
+.center {
+  gap: 0;
 }
 
-/* CENTER */
-#center-column {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+.right {
+  text-align: left;
 }
 
-.level1 {
-  padding-left: 20px;
+/* ----------------------------------------
+   IMAGE SPAN (CENTER + RIGHT)
+---------------------------------------- */
+.image-span {
+  grid-column: 2 / 4; /* 가운데 + 오른쪽 포함 */
 }
 
-.center-bottom img {
+.image-span img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* RIGHT */
-#right-column {
-  text-align: left;
+/* ----------------------------------------
+   INDENTATION
+---------------------------------------- */
+.level1 {
+  padding-left: 20px;
 }
 
-/* RESET */
+/* ----------------------------------------
+   RESET
+---------------------------------------- */
 #wrapper * {
   margin: 0;
   padding: 0;
-}
-
-.level2.clickable:hover {
-  font-style: italic;
-  text-decoration: underline;
-  opacity: 1; /* 기존 hover 투명도 제거 */
 }
