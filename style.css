@@ -1,78 +1,64 @@
-/* ----------------------------------------
-   GLOBAL
----------------------------------------- */
-body {
+* {
   margin: 0;
   padding: 0;
-  background: #f8f7f5;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
+  box-sizing: border-box;
+  font-family: serif;
   color: black;
-  line-height: 1.4;
 }
 
-/* ----------------------------------------
-   WRAPPER
----------------------------------------- */
+body {
+  padding: 40px;
+}
+
 #wrapper {
-  margin: 27px;
   display: flex;
-  flex-direction: column;
-  gap: 40px; /* row 간 간격 */
+  gap: 80px;
 }
 
-/* ----------------------------------------
-   ROW (3-column grid)
----------------------------------------- */
-.row {
-  display: grid;
-  grid-template-columns: 260px 1fr 160px;
-  column-gap: 40px;
-  align-items: start;
+/* LEFT */
+#left-panel {
+  width: 260px;
 }
 
-/* ----------------------------------------
-   COLUMNS
----------------------------------------- */
-.col {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+.name {
+  font-size: 18px;
 }
 
-.center {
-  gap: 0;
+.role,
+.email {
+  font-size: 14px;
+  margin-top: 4px;
 }
 
-.right {
-  text-align: left;
+/* RIGHT */
+#right-panel {
+  flex: 1;
 }
 
-/* ----------------------------------------
-   IMAGE SPAN (CENTER + RIGHT)
----------------------------------------- */
-.image-span {
-  grid-column: 2 / 4; /* 가운데 + 오른쪽 포함 */
+.section-title {
+  margin-bottom: 20px;
 }
 
-.image-span img {
-  width: 100%;
-  height: auto;
-  display: block;
+.work-item div {
+  margin-bottom: 6px;
 }
 
-/* ----------------------------------------
-   INDENTATION
----------------------------------------- */
+/* INDENTATION */
 .level1 {
-  padding-left: 20px;
+  margin-left: 20px;
 }
 
-/* ----------------------------------------
-   RESET
----------------------------------------- */
-#wrapper * {
-  margin: 0;
-  padding: 0;
+.level2 {
+  margin-left: 40px;
+}
+
+/* CLICK */
+.clickable {
+  cursor: pointer;
+  width: fit-content;
+}
+
+.clickable:hover {
+  font-style: italic;
+  text-decoration: underline;
 }
