@@ -27,12 +27,12 @@ body::before {
    LAYOUT
 ---------------------------------------- */
 #wrapper {
-  width: 100%;
+  width: auto;          /* 전체 폭 대신 콘텐츠 폭만 */
   max-width: 1200px;
-  margin: 40px auto;
+  margin: 40px 0 0 40px; /* top 40px, right 0, bottom 0, left 40px */
   display: flex;
   gap: 60px;
-  padding: 0 20px;
+  padding: 0;
   box-sizing: border-box;
 }
 
