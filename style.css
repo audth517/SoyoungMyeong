@@ -55,3 +55,9 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.level2.clickable:hover {
+  font-style: italic;
+  text-decoration: underline;
+  opacity: 1; /* 기존 hover 투명도 제거 */
+}
