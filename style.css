@@ -96,15 +96,25 @@ body {
 }
 
 .home-link {
-  text-decoration: none; /* 기본 밑줄 제거 */
-  font-style: normal;    /* 기본 이탤릭 제거 */
-  color: inherit;        /* 부모 폰트 색 유지 */
+  text-decoration: none;   /* 기본 밑줄 제거 */
+  font-style: normal;      /* 기본 이탤릭 제거 */
+  color: inherit;          /* 부모 폰트 색 유지 */
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
+/* hover 시만 밑줄 + 이탤릭 */
 .home-link:hover {
   text-decoration: underline;
+  font-style: italic;
+}
+
+/* 클릭 시 보라색 등 브라우저 기본 색 없애기 */
+.home-link:active,
+.home-link:focus {
+  color: inherit;
+  outline: none;
+  text-decoration: underline; /* 선택적으로 hover 효과 유지 */
   font-style: italic;
 }
 
