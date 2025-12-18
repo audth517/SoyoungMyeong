@@ -2,29 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Soyoung Myeong - Data Visualizations</title>
+  <title>Data Visualizations – Soyoung Myeong</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div id="wrapper">
 
-    <!-- LEFT SIDE: PERSONAL INFO -->
-    <div id="left-panel">
-      <div class="name">Soyoung Myeong</div>
-      <div class="role">ID KAIST Undergraduate Student</div>
-      <div class="email">audth517@kaist.ac.kr</div>
-    </div>
+    <!-- SMALL MULTIPLES PAGE GRID -->
+    <div class="sm-page">
 
-    <!-- RIGHT SIDE: WORKS -->
-    <div id="right-panel">
-      <div id="works-list">
-        <div class="work-item">
-          <div>Data Visualizations</div>
-          <div class="level1" style="margin-left:20px;">Japan Trip Depending on You</div>
+      <!-- ───── TOP ROW ───── -->
+
+      <!-- LEFT TOP -->
+      <div class="sm-cell sm-top sm-left">
+        <div class="name">Soyoung Myeong</div>
+        <div class="role">ID KAIST Undergraduate Student</div>
+        <div class="email">audth517@kaist.ac.kr</div>
+      </div>
+
+      <!-- CENTER TOP -->
+      <div class="sm-cell sm-top sm-center">
+        <div class="section-title">Data Visualizations</div>
+        <div class="level1">Japan Trip Depending on You</div>
+      </div>
+
+      <!-- RIGHT TOP -->
+      <div class="sm-cell sm-top sm-right">
+        <div>Soyoung Myeong</div>
+        <div>2025</div>
+      </div>
+
+      <!-- ───── BOTTOM ROW ───── -->
+
+      <!-- LEFT BOTTOM -->
+      <div class="sm-cell sm-bottom sm-left">
+        <div class="sm-description">
+      
+          <p>
+            <em>Data Visualizations</em> is a project that transforms data from topics 
+            I am personally interested in, data that is not inherently readable, into exploratory visual narratives.
+          </p>
+      
+          <p>
+            <em>Japan Trip Depending on You</em> visualizes how my spending patterns in Japan 
+            have changed since 2023 depending on who I travel with. The groups are divided into 
+            friends, boyfriend, and family, and the spending categories include 
+            convenience stores, goods shops, restaurants & cafés, transportation, and tourism.
+          </p>
+      
+          <p>
+            The graphic style is inspired by DNA. 
+            Just as DNA is composed of specific bases that come together to form a single compound, 
+            I saw a parallel between this structure and the relationship between travel groups and spending categories.
+          </p>
+
+          <p>
+            The overall layout is inspired by receipts. 
+            I adopted the mixed use of left-aligned, center-aligned, and right-aligned text commonly found on receipts. 
+            The overall spending patterns are represented using a barcode-like format borrowed from receipts.
+          </p>
+
+          <p>
+            All data collection began with capturing my own receipts and transferring them into an XLSX file. 
+            The data visualization graphics were generated as SVG files using 
+            p5.js with data.json, index.html, sketch.js, and style.css, and the final design was completed in Adobe Illustrator.
+          </p>
+      
         </div>
       </div>
-    </div>
 
+      <!-- CENTER BOTTOM -->
+      <div class="sm-cell sm-bottom sm-center">
+        <img
+          src="assets/images/data-visualizations/soyoung-myeong_japan-trip-depending-on-you.png"
+          alt="Japan Trip Depending on You"
+          class="sm-image"
+        />
+      </div>
+
+      <!-- RIGHT BOTTOM -->
+      <div class="sm-cell sm-bottom sm-right">
+      </div>
+
+    </div>
   </div>
 </body>
 </html>
