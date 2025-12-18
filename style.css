@@ -126,6 +126,10 @@ body {
   margin-bottom: 20px;
 }
 
+.sm-image--narrow {
+  width: 33.333%;
+}
+
 .sm-description {
   line-height: 1.5;
 }
@@ -139,4 +143,11 @@ body {
   line-height: 1.3;
   margin-top: 0px;      /* 이미지와 캡션 사이 */
   color: #000;
+}
+
+.sm-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 12px;
 }
