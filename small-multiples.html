@@ -2,52 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Soyoung Myeong – Small Multiples</title>
+  <title>Small Multiples – Soyoung Myeong</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <div id="wrapper">
 
-    <!-- ROW 1 -->
-    <div class="row">
-      <!-- LEFT -->
-      <div class="col left">
-        <div>Soyoung Myeong</div>
-        <div>ID KAIST Undergraduate Student</div>
-        <div>audth517@kaist.ac.kr</div>
+    <!-- SMALL MULTIPLES PAGE GRID -->
+    <div class="sm-page">
+
+      <!-- ───── TOP ROW ───── -->
+
+      <!-- LEFT TOP -->
+      <div class="sm-cell sm-top sm-left">
+        <div class="name">Soyoung Myeong</div>
+        <div class="role">ID KAIST Undergraduate Student</div>
+        <div class="email">audth517@kaist.ac.kr</div>
       </div>
 
-      <!-- CENTER -->
-      <div class="col center">
-        <div>Small Multiples</div>
+      <!-- CENTER TOP -->
+      <div class="sm-cell sm-top sm-center">
+        <div class="section-title">Small Multiples</div>
         <div class="level1">Twelve Months, Twelve Memories</div>
       </div>
 
-      <!-- RIGHT -->
-      <div class="col right">
+      <!-- RIGHT TOP -->
+      <div class="sm-cell sm-top sm-right">
         <div>Soyoung Myeong</div>
         <div>2025</div>
       </div>
-    </div>
 
-    <!-- ROW 2 -->
-    <div class="row">
-      <!-- LEFT -->
-      <div class="col left">
-        <div>// Small Multiples Introduction //</div>
-        <div>// Twelve Months, Twelve Memories Introduction //</div>
+      <!-- ───── BOTTOM ROW ───── -->
+
+      <!-- LEFT BOTTOM -->
+      <div class="sm-cell sm-bottom sm-left">
+        <p class="sm-description">
+          Introduction
+        </p>
       </div>
 
-      <!-- IMAGE (CENTER + RIGHT) -->
-      <div class="col image-span">
+      <!-- CENTER BOTTOM -->
+      <div class="sm-cell sm-bottom sm-center">
         <img
-          src="assets/images/small-multiples/soyoung-myeong_twelve-months-twelve-memories.png"
+          src="soyoung-myeong_twelve-months-twelve-memories.png"
           alt="Twelve Months, Twelve Memories"
+          class="sm-image"
         />
       </div>
-    </div>
 
+      <!-- RIGHT BOTTOM -->
+      <div class="sm-cell sm-bottom sm-right">
+        <!-- intentionally empty -->
+      </div>
+
+    </div>
   </div>
 </body>
 </html>
