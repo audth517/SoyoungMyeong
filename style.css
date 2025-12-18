@@ -23,8 +23,8 @@ body {
    LAYOUT
 ---------------------------------------- */
 #wrapper {
-  max-width: 1200px;
-  margin: 27px 0 0 27px;
+  width: 100%;
+  max-width: none;      /* ⭐ 이게 중요 */
   display: flex;
   gap: 40px;
 }
