@@ -86,7 +86,9 @@ body {
   cursor: pointer;
 }
 
-.clickable:hover {
-  font-style: italic;
+..clickable:hover {
   text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transform: skewX(-8deg);
 }
