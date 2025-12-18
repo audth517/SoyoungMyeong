@@ -95,6 +95,19 @@ body {
   transform: skewX(-8deg);
 }
 
+.home-link {
+  text-decoration: none; /* 기본 밑줄 제거 */
+  font-style: normal;    /* 기본 이탤릭 제거 */
+  color: inherit;        /* 부모 폰트 색 유지 */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+  font-style: italic;
+}
+
 .sm-page {
   display: grid;
   grid-template-columns: 260px minmax(0, 1fr) 260px;
