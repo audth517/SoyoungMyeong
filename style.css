@@ -1,63 +1,89 @@
+/* ----------------------------------------
+   RESET
+---------------------------------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* -------------------------
-   TYPOGRAPHY (GLOBAL)
-------------------------- */
+/* ----------------------------------------
+   GLOBAL TYPOGRAPHY
+---------------------------------------- */
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.6;
-  color: black;
-  padding: 40px;
+  background: #f8f7f5;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;          /* Medium */
+  font-size: 16px;
+  line-height: 1.4;
+  color: #000;
 }
 
-/* -------------------------
+/* ----------------------------------------
    LAYOUT
-------------------------- */
+---------------------------------------- */
 #wrapper {
+  max-width: 1200px;
+  margin: 27px 0 0 27px;
   display: flex;
-  gap: 80px;
+  gap: 40px;
 }
 
-/* LEFT PANEL */
 #left-panel {
-  width: 260px;
+  min-width: 260px;
+  flex-shrink: 0;
 }
 
-/* RIGHT PANEL */
 #right-panel {
   flex: 1;
 }
 
-.section-title {
-  margin-bottom: 20px;
+/* ----------------------------------------
+   TEXT NORMALIZATION
+---------------------------------------- */
+#left-panel *,
+#right-panel * {
+  font: inherit;
+  color: inherit;
+  line-height: inherit;
 }
 
-/* -------------------------
-   WORK LIST
-------------------------- */
-.work-item div {
+/* ----------------------------------------
+   WORKS LIST
+---------------------------------------- */
+.section-title {
+  /* 엔터 금지: 아래 여백 없음 */
+}
+
+.work-item {
+  width: fit-content;
+}
+
+/* 모든 줄 동일 간격 */
+.work-item > div {
   margin-bottom: 6px;
 }
 
-/* INDENTATION */
+.work-item > div:last-child {
+  margin-bottom: 0;
+}
+
+/* ----------------------------------------
+   INDENTATION ONLY
+---------------------------------------- */
 .level1 {
-  margin-left: 20px;
+  padding-left: 20px;
 }
 
 .level2 {
-  margin-left: 40px;
+  padding-left: 40px;
 }
 
-/* CLICKABLE ITEMS */
+/* ----------------------------------------
+   INTERACTION
+---------------------------------------- */
 .clickable {
   cursor: pointer;
-  width: fit-content;
 }
 
 .clickable:hover {
