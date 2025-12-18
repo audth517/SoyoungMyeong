@@ -92,3 +92,37 @@ body {
   text-underline-offset: 2px;
   transform: skewX(-8deg);
 }
+
+.sm-page {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 40px;
+  row-gap: 60px;
+}
+
+.sm-cell {
+  width: 100%;
+}
+
+.sm-top {
+  align-self: start;
+}
+
+.sm-bottom {
+  align-self: start;
+}
+
+.sm-right {
+  text-align: left;
+}
+
+.sm-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sm-description {
+  line-height: 1.5;
+}
