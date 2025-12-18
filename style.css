@@ -127,3 +127,7 @@ body {
 .sm-description {
   line-height: 1.5;
 }
+
+.sm-description p {
+  margin-bottom: 1em;
+}
