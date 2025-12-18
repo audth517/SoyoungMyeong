@@ -61,7 +61,7 @@ body {
 
 /* 모든 줄 동일 간격 */
 .work-item > div {
-  margin-bottom: 6px;
+  margin-bottom: 0px;
 }
 
 .work-item > div:last-child {
