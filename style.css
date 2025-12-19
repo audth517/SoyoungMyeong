@@ -65,7 +65,7 @@ body {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
-  font-style: inherit;
+  /* font-style: inherit; */
   color: inherit;
   line-height: inherit;
 }
