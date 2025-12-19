@@ -220,6 +220,7 @@ body {
     padding: 18px;
   }
 
+  /* index.html (flex 기반) */
   #wrapper {
     flex-direction: column;
     gap: 32px;
@@ -231,18 +232,20 @@ body {
     width: 100%;
   }
 
+  /* detail pages (grid 기반) */
   .sm-page {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
     row-gap: 40px;
   }
-   
+
+  /* 모든 grid 아이템을 한 column으로 */
   .sm-cell {
-    grid-column: auto !important;
-    grid-row: auto !important;
+    grid-column: 1 / -1;
   }
 
+  /* 좁은 이미지도 모바일에서는 풀폭 */
   .sm-image--narrow {
     width: 100%;
   }
-
 }
