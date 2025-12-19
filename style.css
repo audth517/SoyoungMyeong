@@ -7,13 +7,29 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "OptimaLTPro";
+  src: url("../assets/fonts/OptimaLTPro-Medium.woff2") format("woff2"),
+       url("../assets/fonts/OptimaLTPro-Medium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OptimaLTPro";
+  src: url("../assets/fonts/OptimaLTPro-MediumItalic.woff2") format("woff2"),
+       url("../assets/fonts/OptimaLTPro-MediumItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
 /* ----------------------------------------
    GLOBAL TYPOGRAPHY
 ---------------------------------------- */
 body {
   background: #f8f7f5;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
+  font-family: "OptimaLTPro", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.3;
   color: #000;
@@ -45,7 +61,10 @@ body {
 ---------------------------------------- */
 #left-panel *,
 #right-panel * {
-  font: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
   color: inherit;
   line-height: inherit;
 }
@@ -92,7 +111,7 @@ body {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
-  transform: skewX(-8deg);
+  transform: none;
 }
 
 .home-link {
