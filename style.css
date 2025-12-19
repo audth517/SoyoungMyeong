@@ -215,7 +215,6 @@ body {
 }
 
 @media (max-width: 768px) {
-
   body {
     padding: 18px;
   }
@@ -234,6 +233,11 @@ body {
   .sm-page {
     grid-template-columns: 1fr;
     row-gap: 40px;
+  }
+   
+  .sm-cell {
+    grid-column: auto !important;
+    grid-row: auto !important;
   }
 
   .sm-image--narrow {
