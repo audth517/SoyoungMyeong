@@ -250,3 +250,9 @@ body {
     width: 100%;
   }
 }
+
+.sm-pdf {
+  width: 100%;        /* 부모(.sm-image--narrow)의 33.333% */
+  min-height: 400px;  /* 가로 포스터라 너무 납작해지는 것만 방지 */
+  border: none;
+}
