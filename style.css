@@ -49,7 +49,7 @@ body {
 }
 
 #left-panel {
-  width: clamp(250px, 22vw, 300px);
+  width: clamp(230px, 22vw, 300px);
   flex-shrink: 0;
 }
 
@@ -142,9 +142,9 @@ body {
 .sm-page {
   display: grid;
   grid-template-columns:
-    clamp(250px, 22vw, 300px)
+    clamp(230px, 22vw, 300px)
     minmax(0, 1fr)
-    clamp(250px, 22vw, 300px);
+    clamp(230px, 22vw, 300px);
   grid-template-rows: auto auto;
   column-gap: 40px;
   row-gap: 60px;
